@@ -70,7 +70,7 @@ class Walker extends Particle {
 class Trail extends Particle {
   constructor(x, y){
     super(x, y)
-    this.fadeVelocity = random(2,20);
+    this.fadeVelocity = random(2,90);
     this.finished = false;
     this.col = color(random(120,255),random([20,0,40]),random([20,0,40]))
   }
