@@ -48,7 +48,7 @@ function setup() {
     colores.push(createColor())
   }
 }
-let w = 5
+let w = 4
 function draw() {
   if(frameCount % 100 == 0){
     colores = []
