@@ -32,7 +32,12 @@ function step(stepSize){
 }
 
 function setup() {
+  let lienzo
+  if(windowWidth < 500){
+    lienzo = createCanvas(windowWidth, 500);
+  }else{
   lienzo = createCanvas(500, 500);
+  }
   lienzo.parent("sketch")
   noSmooth()
   background(0)
