@@ -34,7 +34,7 @@ function step(stepSize){
 function setup() {
   let lienzo
   if(windowWidth < 500){
-    lienzo = createCanvas(windowWidth, 500);
+    lienzo = createCanvas(windowWidth-50, 500);
   }else{
   lienzo = createCanvas(500, 500);
   }
