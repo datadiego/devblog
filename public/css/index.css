@@ -9,13 +9,14 @@
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #dad8d8;
-
+	--color-pink-90: hsl(350, 100%, 70%);
 	/* --text-color is assigned to --color-gray-_ above */
-	--text-color-link: #e0e0e0;
-	--text-color-link-active: #C0C0C0;
-	--text-color-link-visited: #dad8d8;
-	--text-color: var(--color-gray-90);
-	--background-color: #000000;
+	--text-color-link: var(--color-pink-50)
+	--text-color-link-active: var(--color-pink-90);
+	--text-color-link-visited: var(--color-pink-90);
+	--text-color: var(--color-pink-90);
+	--text-color-date: var(--color-pink-90);
+	--background-color: hsl(303, 100%, 4%);
 	--syntax-tab-size: 2;
 
 }
@@ -86,7 +87,7 @@ main :first-child {
 }
 
 header {
-	border-bottom: 1px solid var(--color-gray-20)
+	border-bottom: 1px solid var(--color-pink-90)
 }
 header:after {
 	content: "";
@@ -96,7 +97,7 @@ header:after {
 
 .links-nextprev {
 	list-style: none;
-	border-top: 1px dashed var(--color-gray-20);
+	border-top: 1px solid var(--color-pink-90);
 	padding: 1em 0;
 }
 
@@ -190,7 +191,7 @@ header {
 .postlist-date,
 .postlist-item:before {
 	font-size: 0.8125em; /* 13px /16 */
-	color: var(--color-gray-90);
+	color: var(--text-color);
 }
 .postlist-date {
 	word-spacing: -0.5px;
@@ -232,6 +233,7 @@ header {
 }
 .post-metadata time {
 	margin-right: 1em;
+	color: var(--text-color)
 }
 
 /* Direct Links / Markdown Headers */
