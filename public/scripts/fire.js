@@ -111,8 +111,13 @@ let trail;
 let walker = [];
 let stars = [];
 function setup() {
-  lienzo = createCanvas(400, 400);
-  lienzo.parent('sketch');
+  let lienzo
+  if(windowWidth < 500){
+    lienzo = createCanvas(windowWidth-50, 500);
+  }else{
+  lienzo = createCanvas(500, 500);
+  }
+  lienzo.parent("sketch")
   let ancho = 50
   for(let i = 0; i<20; i++){
     stars.push(new Star(random(width), random(height)))
