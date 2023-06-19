@@ -96,7 +96,7 @@ function setup() {
   p1 = select("#animated-link")
   // p2 = select("#animated-link2")
   // p3 = select("#animated-link3")
-  console.log(p1)
+  // console.log(p1)
   t = new TextMangler("cleardatadata")
 
   p1.mouseOver(mess);
