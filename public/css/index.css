@@ -9,14 +9,14 @@
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #dad8d8;
-	--color-pink-90: hsl(350, 100%, 70%);
+	--color-pink-90: hsl(0, 0%, 0%);
 	/* --text-color is assigned to --color-gray-_ above */
 	--text-color-link: var(--color-pink-50)
 	--text-color-link-active: var(--color-pink-90);
 	--text-color-link-visited: var(--color-pink-90);
 	--text-color: var(--color-pink-90);
 	--text-color-date: var(--color-pink-90);
-	--background-color: hsl(303, 100%, 4%);
+	--background-color: hsl(0, 0%, 100%);
 	--syntax-tab-size: 2;
 
 }
@@ -87,7 +87,8 @@ main :first-child {
 }
 
 header {
-	border-bottom: 1px solid var(--color-pink-90)
+	border-bottom: 1px solid var(--color-pink-90);
+	width: 100%;
 }
 header:after {
 	content: "";
@@ -294,3 +295,28 @@ h2 + .header-anchor {
 	
   }
   
+  .gallery_grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 0px;
+	margin-top: 20px;
+}
+
+.gallery_item{
+	width: 100%;
+	height: auto;
+	object-fit: fill;
+	object-position: center;
+}
+
+pre{
+	font-size: 9px;
+	line-height: 1.5;
+	white-space: pre-wrap;
+  }
+
+@media (max-width: 768px) {
+	pre{
+		font-size: 6px;
+	}
+}
